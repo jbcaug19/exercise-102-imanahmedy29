@@ -11,6 +11,7 @@ public class HomeController {
     @RequestMapping("/")
     public String homePage(Model model){
         model.addAttribute("myvar", "Say hello to the people.");
+        model.addAttribute("thevar", "They love you.");
         return "hometemplate";
     }
 }
